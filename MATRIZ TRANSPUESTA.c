@@ -5,8 +5,6 @@ int main()
 {
     int c;
     int f;
-    int c2;
-    int f2;
 
     printf("Ingrese el numero de columnas de la matriz: ");
     scanf("%d", &c);
@@ -15,24 +13,29 @@ int main()
     scanf("%d", &f);
 
     int num[f][c];
+    
 
     for (int i = 0; i < f; i++)
     {
         for (int j = 0; j < c; j++)
         {
             num[i][j]= rand() % 100;
+            printf("%d ", num[i][j]);
         }
         printf("\n");
     }
-
-    for (int i = 0; i < count; i++)
+    printf("\n");
+    
+    for (int i = 0; i < f; i++)
     {
-        for (int i = 0; i < ; i++)
+        for (int j = 0; j < c; j++)
         {
-            /* code */
+            
+            printf("%d ", num[j][i]);
         }
-        
+        printf("\n");
     }
+    
     
 
 
